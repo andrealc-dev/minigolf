@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Instructions</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #d62828; /* Christmas red */
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #f8f9fa;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px #6b0000;
+    }
+
+    .instructions {
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      max-width: 90%;
+      line-height: 1.5;
+    }
+
+    .instructions p {
+      margin: 10px 0;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 1rem;
+      font-style: italic;
+      color: #ffcccb; /* Light festive red */
+    }
+
+    /* Animation */
+    .instructions {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Adjustments for Phones */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .instructions {
+        font-size: 1rem;
+        padding: 12px;
+        margin: 0 10px;
+      }
+
+      .footer {
+        font-size: 0.9rem;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .instructions {
+        font-size: 0.9rem;
+        padding: 10px;
+        border-width: 1.5px;
+      }
+
+      .footer {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Game Start Instructions</h1>
+  <div class="instructions">
+    <p>- <strong>Press </strong>the button above <strong>once</strong> before your team starts the game.</p>
+    <p>- <strong>Double press after</strong> finishing the game.</p>
+  </div>
+  <div class="footer">Happy Holidays & Good Luck! 🎄</div>
+</body>
+</html>
